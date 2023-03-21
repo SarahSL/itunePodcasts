@@ -20,6 +20,166 @@
     margin: 24px;
 }
 
+.podcasts {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.podcasts-filter-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.podcasts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    margin-top: 64px;
+}
+
+.podcasts-item {
+    flex: 1 0 21%;
+    margin: 5px;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    text-align: center;
+    box-shadow: 1px 1px 1px 0 #888888;
+    border-radius: 4px;
+}
+
+.podcasts-item-img {
+    margin-top: -48px;
+    border-radius: 100%;
+}
+
+.podcasts-item-text {
+
+}
+
+.podcasts-search-input {
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+.podcasts-search-text {
+    margin: 0;
+    background: dodgerblue;
+    padding: 2px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+/** PodcastDetail **/
+
+.podcast-detail {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+}
+
+@media (max-width: 600px) {
+    .podcast-detail {
+        flex-direction: column;
+    }
+
+    .podcast-episode {
+        flex-direction: column;
+    }
+}
+
+
+.podcast-episode {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.podcast-episode-detail {
+    flex: 0.7;
+}
+
+.podcast-detail-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 0.2;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.podcast-detail-img {
+    margin-top: 12px;
+
+}
+
+.podcasts-episodes {
+    flex: 0.7;
+}
+
+.border-bottom-style {
+    border-bottom: 2px solid rgba(89, 89, 89, 0.4);
+    padding: 0.5rem;
+}
+
+.box-style {
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 0 #888888;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.table-episodes {
+    width: 98%;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead th {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:first-child {
+    border-top: 1px solid #ddd;
+}
+
+tbody tr td:first-child {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.podcast-episode-detail-description {
+    font-style: italic;
+    font-size: 14px;
+}
+
+audio {
+    width: 100%;
+}
 .loading-container {
     display: flex;
     flex-direction: column;
